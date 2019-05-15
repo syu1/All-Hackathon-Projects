@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">	
+<head>
+	<meta charset="utf-8">
+	<title>Datr</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/css/font-awesome.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script>
+	
+	$(document).ready(function(){
+		$('#distanceRange').on('change', function(){
+			$('#distanceValue').html($('#distanceRange').val());
+		});
+	});
+	
+	</script>
+	
+	<style type='text/css'> @webkit-keyframes uil-default-anim { 0% { opacity: 1} 100% {opacity: 0} }@keyframes uil-default-anim { 0% { opacity: 1} 100% {opacity: 0} }.uil-default-css > div:nth-of-type(1){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: -0.5s;animation-delay: -0.5s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(2){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: -0.4166666666666667s;animation-delay: -0.4166666666666667s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(3){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: -0.33333333333333337s;animation-delay: -0.33333333333333337s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(4){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: -0.25s;animation-delay: -0.25s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(5){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: -0.16666666666666669s;animation-delay: -0.16666666666666669s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(6){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: -0.08333333333333331s;animation-delay: -0.08333333333333331s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(7){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: 0s;animation-delay: 0s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(8){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: 0.08333333333333337s;animation-delay: 0.08333333333333337s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(9){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: 0.16666666666666663s;animation-delay: 0.16666666666666663s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(10){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: 0.25s;animation-delay: 0.25s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(11){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: 0.33333333333333337s;animation-delay: 0.33333333333333337s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}.uil-default-css > div:nth-of-type(12){-webkit-animation: uil-default-anim 1s linear infinite;animation: uil-default-anim 1s linear infinite;-webkit-animation-delay: 0.41666666666666663s;animation-delay: 0.41666666666666663s;}.uil-default-css { position: relative;background:none;width:200px;height:200px;}
+	width: 100%;
+@-webkit-keyframes uil-clock-rotate1 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -25px);
+    -moz-transform: rotate(0deg) translate(0, -25px);
+    -webkit-transform: rotate(0deg) translate(0, -25px);
+    -o-transform: rotate(0deg) translate(0, -25px);
+    transform: rotate(0deg) translate(0, -25px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -25px);
+    -moz-transform: rotate(360deg) translate(0, -25px);
+    -webkit-transform: rotate(360deg) translate(0, -25px);
+    -o-transform: rotate(360deg) translate(0, -25px);
+    transform: rotate(360deg) translate(0, -25px);
+  }
+}
+@-webkit-keyframes uil-clock-rotate1 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -25px);
+    -moz-transform: rotate(0deg) translate(0, -25px);
+    -webkit-transform: rotate(0deg) translate(0, -25px);
+    -o-transform: rotate(0deg) translate(0, -25px);
+    transform: rotate(0deg) translate(0, -25px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -25px);
+    -moz-transform: rotate(360deg) translate(0, -25px);
+    -webkit-transform: rotate(360deg) translate(0, -25px);
+    -o-transform: rotate(360deg) translate(0, -25px);
+    transform: rotate(360deg) translate(0, -25px);
+  }
+}
+@-moz-keyframes uil-clock-rotate1 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -25px);
+    -moz-transform: rotate(0deg) translate(0, -25px);
+    -webkit-transform: rotate(0deg) translate(0, -25px);
+    -o-transform: rotate(0deg) translate(0, -25px);
+    transform: rotate(0deg) translate(0, -25px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -25px);
+    -moz-transform: rotate(360deg) translate(0, -25px);
+    -webkit-transform: rotate(360deg) translate(0, -25px);
+    -o-transform: rotate(360deg) translate(0, -25px);
+    transform: rotate(360deg) translate(0, -25px);
+  }
+}
+@-ms-keyframes uil-clock-rotate1 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -25px);
+    -moz-transform: rotate(0deg) translate(0, -25px);
+    -webkit-transform: rotate(0deg) translate(0, -25px);
+    -o-transform: rotate(0deg) translate(0, -25px);
+    transform: rotate(0deg) translate(0, -25px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -25px);
+    -moz-transform: rotate(360deg) translate(0, -25px);
+    -webkit-transform: rotate(360deg) translate(0, -25px);
+    -o-transform: rotate(360deg) translate(0, -25px);
+    transform: rotate(360deg) translate(0, -25px);
+  }
+}
+@-moz-keyframes uil-clock-rotate1 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -25px);
+    -moz-transform: rotate(0deg) translate(0, -25px);
+    -webkit-transform: rotate(0deg) translate(0, -25px);
+    -o-transform: rotate(0deg) translate(0, -25px);
+    transform: rotate(0deg) translate(0, -25px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -25px);
+    -moz-transform: rotate(360deg) translate(0, -25px);
+    -webkit-transform: rotate(360deg) translate(0, -25px);
+    -o-transform: rotate(360deg) translate(0, -25px);
+    transform: rotate(360deg) translate(0, -25px);
+  }
+}
+@-webkit-keyframes uil-clock-rotate1 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -25px);
+    -moz-transform: rotate(0deg) translate(0, -25px);
+    -webkit-transform: rotate(0deg) translate(0, -25px);
+    -o-transform: rotate(0deg) translate(0, -25px);
+    transform: rotate(0deg) translate(0, -25px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -25px);
+    -moz-transform: rotate(360deg) translate(0, -25px);
+    -webkit-transform: rotate(360deg) translate(0, -25px);
+    -o-transform: rotate(360deg) translate(0, -25px);
+    transform: rotate(360deg) translate(0, -25px);
+  }
+}
+@-o-keyframes uil-clock-rotate1 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -25px);
+    -moz-transform: rotate(0deg) translate(0, -25px);
+    -webkit-transform: rotate(0deg) translate(0, -25px);
+    -o-transform: rotate(0deg) translate(0, -25px);
+    transform: rotate(0deg) translate(0, -25px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -25px);
+    -moz-transform: rotate(360deg) translate(0, -25px);
+    -webkit-transform: rotate(360deg) translate(0, -25px);
+    -o-transform: rotate(360deg) translate(0, -25px);
+    transform: rotate(360deg) translate(0, -25px);
+  }
+}
+@keyframes uil-clock-rotate1 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -25px);
+    -moz-transform: rotate(0deg) translate(0, -25px);
+    -webkit-transform: rotate(0deg) translate(0, -25px);
+    -o-transform: rotate(0deg) translate(0, -25px);
+    transform: rotate(0deg) translate(0, -25px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -25px);
+    -moz-transform: rotate(360deg) translate(0, -25px);
+    -webkit-transform: rotate(360deg) translate(0, -25px);
+    -o-transform: rotate(360deg) translate(0, -25px);
+    transform: rotate(360deg) translate(0, -25px);
+  }
+}
+width: 100%;
+@-webkit-keyframes uil-clock-rotate2 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -35px);
+    -moz-transform: rotate(0deg) translate(0, -35px);
+    -webkit-transform: rotate(0deg) translate(0, -35px);
+    -o-transform: rotate(0deg) translate(0, -35px);
+    transform: rotate(0deg) translate(0, -35px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -35px);
+    -moz-transform: rotate(360deg) translate(0, -35px);
+    -webkit-transform: rotate(360deg) translate(0, -35px);
+    -o-transform: rotate(360deg) translate(0, -35px);
+    transform: rotate(360deg) translate(0, -35px);
+  }
+}
+@-webkit-keyframes uil-clock-rotate2 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -35px);
+    -moz-transform: rotate(0deg) translate(0, -35px);
+    -webkit-transform: rotate(0deg) translate(0, -35px);
+    -o-transform: rotate(0deg) translate(0, -35px);
+    transform: rotate(0deg) translate(0, -35px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -35px);
+    -moz-transform: rotate(360deg) translate(0, -35px);
+    -webkit-transform: rotate(360deg) translate(0, -35px);
+    -o-transform: rotate(360deg) translate(0, -35px);
+    transform: rotate(360deg) translate(0, -35px);
+  }
+}
+@-moz-keyframes uil-clock-rotate2 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -35px);
+    -moz-transform: rotate(0deg) translate(0, -35px);
+    -webkit-transform: rotate(0deg) translate(0, -35px);
+    -o-transform: rotate(0deg) translate(0, -35px);
+    transform: rotate(0deg) translate(0, -35px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -35px);
+    -moz-transform: rotate(360deg) translate(0, -35px);
+    -webkit-transform: rotate(360deg) translate(0, -35px);
+    -o-transform: rotate(360deg) translate(0, -35px);
+    transform: rotate(360deg) translate(0, -35px);
+  }
+}
+@-ms-keyframes uil-clock-rotate2 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -35px);
+    -moz-transform: rotate(0deg) translate(0, -35px);
+    -webkit-transform: rotate(0deg) translate(0, -35px);
+    -o-transform: rotate(0deg) translate(0, -35px);
+    transform: rotate(0deg) translate(0, -35px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -35px);
+    -moz-transform: rotate(360deg) translate(0, -35px);
+    -webkit-transform: rotate(360deg) translate(0, -35px);
+    -o-transform: rotate(360deg) translate(0, -35px);
+    transform: rotate(360deg) translate(0, -35px);
+  }
+}
+@-moz-keyframes uil-clock-rotate2 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -35px);
+    -moz-transform: rotate(0deg) translate(0, -35px);
+    -webkit-transform: rotate(0deg) translate(0, -35px);
+    -o-transform: rotate(0deg) translate(0, -35px);
+    transform: rotate(0deg) translate(0, -35px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -35px);
+    -moz-transform: rotate(360deg) translate(0, -35px);
+    -webkit-transform: rotate(360deg) translate(0, -35px);
+    -o-transform: rotate(360deg) translate(0, -35px);
+    transform: rotate(360deg) translate(0, -35px);
+  }
+}
+@-webkit-keyframes uil-clock-rotate2 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -35px);
+    -moz-transform: rotate(0deg) translate(0, -35px);
+    -webkit-transform: rotate(0deg) translate(0, -35px);
+    -o-transform: rotate(0deg) translate(0, -35px);
+    transform: rotate(0deg) translate(0, -35px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -35px);
+    -moz-transform: rotate(360deg) translate(0, -35px);
+    -webkit-transform: rotate(360deg) translate(0, -35px);
+    -o-transform: rotate(360deg) translate(0, -35px);
+    transform: rotate(360deg) translate(0, -35px);
+  }
+}
+@-o-keyframes uil-clock-rotate2 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -35px);
+    -moz-transform: rotate(0deg) translate(0, -35px);
+    -webkit-transform: rotate(0deg) translate(0, -35px);
+    -o-transform: rotate(0deg) translate(0, -35px);
+    transform: rotate(0deg) translate(0, -35px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -35px);
+    -moz-transform: rotate(360deg) translate(0, -35px);
+    -webkit-transform: rotate(360deg) translate(0, -35px);
+    -o-transform: rotate(360deg) translate(0, -35px);
+    transform: rotate(360deg) translate(0, -35px);
+  }
+}
+@keyframes uil-clock-rotate2 {
+  0% {
+    -ms-transform: rotate(0deg) translate(0, -35px);
+    -moz-transform: rotate(0deg) translate(0, -35px);
+    -webkit-transform: rotate(0deg) translate(0, -35px);
+    -o-transform: rotate(0deg) translate(0, -35px);
+    transform: rotate(0deg) translate(0, -35px);
+  }
+  100% {
+    -ms-transform: rotate(360deg) translate(0, -35px);
+    -moz-transform: rotate(360deg) translate(0, -35px);
+    -webkit-transform: rotate(360deg) translate(0, -35px);
+    -o-transform: rotate(360deg) translate(0, -35px);
+    transform: rotate(360deg) translate(0, -35px);
+  }
+}
+.uil-clock-css {
+  background: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.uil-clock-css .clock {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  background: #d6f1ff;
+  border: 16px solid #2b74ba;
+  top: 20px;
+  left: 20px;
+}
+.uil-clock-css .ptr1 {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  top: 75px;
+  left: 95px;
+  background: #000000;
+  border-radius: 5px;
+  -ms-animation: uil-clock-rotate1 5s linear infinite;
+  -moz-animation: uil-clock-rotate1 5s linear infinite;
+  -webkit-animation: uil-clock-rotate1 5s linear infinite;
+  -o-animation: uil-clock-rotate1 5s linear infinite;
+  animation: uil-clock-rotate1 5s linear infinite;
+}
+.uil-clock-css .ptr2 {
+  position: absolute;
+  width: 4px;
+  height: 80px;
+  top: 60px;
+  left: 98px;
+  background: #ff0000;
+  border-radius: 2px;
+  -ms-animation: uil-clock-rotate2 1s linear infinite;
+  -moz-animation: uil-clock-rotate2 1s linear infinite;
+  -webkit-animation: uil-clock-rotate2 1s linear infinite;
+  -o-animation: uil-clock-rotate2 1s linear infinite;
+  animation: uil-clock-rotate2 1s linear infinite;
+}
+ 
+
+
+		.purple-background{
+			background-color: #555299;;
+		}
+
+		.border {
+			border-color: white;
+			border-width:10px;
+			border-radius: 50%;
+			border-style: solid;
+		}
+		
+		.white-words{
+			color:white;
+		}
+
+	</style>
+	
+</head>
+<body class = "purple-background">
+	<!-- Wrap the entire slide show in a div using the "reveal" class. -->
+	<div class="reveal">
+	<!--Wrap all slides in a single "slides" class-->
+		<div class="slides">
+			
+			<section data-background-transition="convex">
+
+				<h1 style="text-transform: capitalize">Datr</h1>
+				<h3 style="text-transform:none; font-size: 1.3em;">Save the Date</h3>
+				<br>
+				<p>Press the space bar to begin</p>
+			</section>
+			<section data-background-transition="convex">
+				<h2>How much can you spend?</h2>
+				
+					<form action="javascript:;" onsubmit="Reveal.next()" class="white-words">
+						$ <input id="money" type="number" min="0" step=".01" style="height: 40px; font-size:20px; width=200px; background-color: #555299; color:white;" name="budget"><br>
+						<br>
+						</form><br>
+						<button type="submit" class="button button-action button-pill button-giant" onclick="Reveal.next();">Continue</button>				
+					
+			</section>
+
+			<section data-background-transition="convex">
+				<h2>How far can you go?</h2>
+				<form required action="javascript:;" onsubmit="Reveal.next()">
+						<input type="range" min="0" max="30" step="1" id="distanceRange"><br>
+						<div style="overflow: none; white-space: nowrap;">
+						<div class = "col-xs-4">
+						</div>
+						<div class = "col-xs-2">
+							<p style="margin:0px" id="distanceValue" class="white-words">15</p>
+						</div>
+						<div class ="col-xs-2">
+							<select name="unit" style="background-color: #555299; color:white;">
+								<option value="miles">Miles</option>
+								<option value="km">Kilometers</option>
+							</select>
+						</div>
+						
+						</div>
+						<br>
+						</form><br>
+						<button type="submit" class="button button-action button-pill button-giant" onclick="Reveal.next();">Continue</button>				
+					
+				
+				</section>
+
+			<section data-background-transition="convex">
+				<h2>Is this an emergency?</h2>
+				
+				<div>
+				<div class='uil-clock-css' style='margin: 0 auto; transform:scale(0.85);'><div class="clock"></div><div class="ptr1"></div><div class="ptr2"></div></div>
+				</div>
+				
+				<br>
+				<div class="col-xs-12">
+				<button class="button button-action button-pill button-giant" onclick="DelayRedirect();" style="width:200px">Yes</button>
+				<button class="button button-caution button-pill button-giant" onclick="DelayRedirect();" style="width:200px">No</button>
+				</div>
+			</section>
+
+			<section data-background-transition="convex">
+				<h2>Calculating Recommendations</h2>
+				
+				<div>
+				<div class='uil-default-css' style='margin: 0 auto; transform:scale(0.8);'><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(0deg) translate(0,-60px);transform:rotate(0deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(30deg) translate(0,-60px);transform:rotate(30deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(60deg) translate(0,-60px);transform:rotate(60deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(90deg) translate(0,-60px);transform:rotate(90deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(120deg) translate(0,-60px);transform:rotate(120deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(150deg) translate(0,-60px);transform:rotate(150deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(180deg) translate(0,-60px);transform:rotate(180deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(210deg) translate(0,-60px);transform:rotate(210deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(240deg) translate(0,-60px);transform:rotate(240deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(270deg) translate(0,-60px);transform:rotate(270deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(300deg) translate(0,-60px);transform:rotate(300deg) translate(0,-60px);border-radius:10px;position:absolute;'></div><div style='top:80px;left:93px;width:14px;height:40px;background:#93a1a1;-webkit-transform:rotate(330deg) translate(0,-60px);transform:rotate(330deg) translate(0,-60px);border-radius:10px;position:absolute;'></div></div>
+				
+				</div>
+				
+			</section>
+
+		</div>	
+		
+	</div>
+	<script type="text/javascript">
+function DelayRedirect() {
+	Reveal.next();
+    var seconds = 3;
+    setInterval(function () {
+        seconds--;
+        if (seconds == 0) {
+            window.location = "\AdminLTE-2.3.0/starter.html";
+        }
+    }, 1000);
+}
+</script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+  	//Required, even if empty.
+  	Reveal.initialize({
+  		controls: false
+  		
+		
+  	});
+	Reveal.configure({
+		keyboard: {
+			80:null,
+			78:null,
+			72:null,
+			76:null,
+			75:null,
+			74:null,
+			36:null,
+			35:null,
+			34:null,
+			37:null,
+			39:null,
+			38:null,
+			40:null,
+			15:null,
+			58:null,
+			59:null,
+			66:null,
+			190:null,
+			191:null,
+			70:null,
+			65:null,
+			33:null,
+			79:null,
+			27: null,
+			
+		}
+	});
+ 	</script>
+</body>
+</html>
+
